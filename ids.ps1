@@ -1,10 +1,10 @@
-$email1 = 'mikesdesktop2@gmail.com'
-$email2 = 'kiendm2@gmail.com'
-$smtpServer = 'sandbox.smtp.mailtrap.io'
+$email1 = 'your_first_email@email.com'
+$email2 = 'your_smtp_mail@smtp.com'
+$smtpServer = 'your_personal_smptServer'
 $smtpPort = 587
 # Credentials for Mailtrap
-$Username = '5c4e558449fa63'
-$Password = 'e3b1a12f4c2db3'
+$Username = 'smptusername'
+$Password = 'smptpassword'
 
 # Add a 2-minute (120 seconds) delay
 Start-Sleep -Seconds 120
@@ -22,7 +22,7 @@ $message.To.Add($email2)
 $message.Subject = "STARTUP Notification"
 $message.Body = "Hi there,
 
-Your MSI [$realIpAddress] has been startup on $timestamp.
+Your PC [$realIpAddress] has been startup on $timestamp.
 
 Check it now, please!"
 
